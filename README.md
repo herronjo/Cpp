@@ -1,4 +1,4 @@
-#== C++ ==
+## == C++ ==
 
 Unlike C++, this program does what the name actually suggests. Increments C.
 
