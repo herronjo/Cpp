@@ -1,0 +1,27 @@
+MAKEFLAGS += --silent
+CC := g++
+CCFLAGS := 
+BUILDDIR := ./build
+
+.DEFAULT_GOAL := build
+
+help:
+	echo "Usage: make [clean/build]"
+	echo "    clean: deletes the build directory and cleans up"
+	echo "    build: builds the program"
+
+clean:
+	echo "Cleaning up..."
+	echo "rm -rf $(BUILDDIR)"
+	rm -rf $(BUILDDIR)
+	echo "rm -rf Makefile"
+	rm -rf Makefile
+
+build:
+	echo Creating build directory...
+	echo "mkdir $(BUILDDIR)"
+	mkdir $(BUILDDIR)
+	echo Compiling C++ program
+	echo "$(CC) -o $(BUILDDIR)/c++ $(CCFLAGS) c++.cpp"
+	$(CC) -o $(BUILDDIR)/c++ $(CCFLAGS) c++.cpp
+	echo Done!
