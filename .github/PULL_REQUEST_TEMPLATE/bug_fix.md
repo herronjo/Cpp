@@ -1,6 +1,6 @@
 ---
-name: This project exists
-about: Complain about the existance of this project.
+name: Bug fix
+about: Tell the world you fixed a bug.
 title: "[BUG FIX]"
 labels: ''
 assignees: ''
